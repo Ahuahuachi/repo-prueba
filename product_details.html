@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a href="/" class="navbar-brand">Mi tiendita</a>
+        <div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="">Todos los productos</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                >Categorías</a
+              >
+              <ul class="dropdown-menu">
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link">Zapatos</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link">Camisas</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Añadir productos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <h1 class="display-4" id="product-title"></h1>
+      <img src="" alt="" id="product-image" />
+      <p class="lead mt-3" id="product-description"></p>
+      <a href="/" class="btn btn-outline-primary">Regresar</a>
+      <a href="#" class="btn btn-danger" id="btn-delete">Borrar producto</a>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <!-- Importa las capacidades de bases de datos -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-database.js"></script>
+
+    <script>
+      // Este script inicializa firebase
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyA9LPE7xXqd6MACOnInD6B5LQP8eRETkPA",
+        authDomain: "kodecamp-6e7f0.firebaseapp.com",
+        projectId: "kodecamp-6e7f0",
+        storageBucket: "kodecamp-6e7f0.appspot.com",
+        messagingSenderId: "478344217559",
+        appId: "1:478344217559:web:df8cd74460cf0b2fe98192",
+        // Config de DB
+        databaseURL: "https://kodecamp-6e7f0-default-rtdb.firebaseio.com/",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <!-- <script src="/js/main.js"></script> -->
+    <script src="/js/product_details.js"></script>
+  </body>
+</html>

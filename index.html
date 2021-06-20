@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navigation">
+      <div class="container-fluid">
+        <a href="/" class="navbar-brand">Mi tiendita</a>
+        <div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="">Todos los productos</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                >Categorías</a
+              >
+              <ul class="dropdown-menu">
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link">Zapatos</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="nav-link">Camisas</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./create_product.html"
+                >Añadir productos</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid mt-5">
+      <div
+        class="d-flex flex-wrap align-content-center"
+        id="main-container"
+      ></div>
+      <!-- <div class="row my-5">
+        <div class="col">
+          <div class="card product-card m-auto">
+            <img
+              src="https://via.placeholder.com/300"
+              alt=""
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <a href="./product_details.html">
+                <h4 class="card-title">Producto</h4>
+              </a>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                aliquam veniam nemo ratione? Pariatur tempore accusamus sapiente
+                optio earum non maiores sed ut nam vel? Sit atque nobis
+                excepturi at!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card product-card m-auto">
+            <img
+              src="https://via.placeholder.com/300"
+              alt=""
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <a href="#">
+                <h4 class="card-title">Producto</h4>
+              </a>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                aliquam veniam nemo ratione? Pariatur tempore accusamus sapiente
+                optio earum non maiores sed ut nam vel? Sit atque nobis
+                excepturi at!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card product-card m-auto">
+            <img
+              src="https://via.placeholder.com/300"
+              alt=""
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <a href="#">
+                <h4 class="card-title">Producto</h4>
+              </a>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                aliquam veniam nemo ratione? Pariatur tempore accusamus sapiente
+                optio earum non maiores sed ut nam vel? Sit atque nobis
+                excepturi at!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card product-card m-auto">
+            <img
+              src="https://via.placeholder.com/300"
+              alt=""
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <a href="#">
+                <h4 class="card-title">Producto</h4>
+              </a>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                aliquam veniam nemo ratione? Pariatur tempore accusamus sapiente
+                optio earum non maiores sed ut nam vel? Sit atque nobis
+                excepturi at!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-5">
+        <div class="col">
+          <div class="card product-card m-auto">
+            <img
+              src="https://via.placeholder.com/300"
+              alt=""
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <a href="#">
+                <h4 class="card-title">Producto</h4>
+              </a>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                aliquam veniam nemo ratione? Pariatur tempore accusamus sapiente
+                optio earum non maiores sed ut nam vel? Sit atque nobis
+                excepturi at!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card product-card m-auto">
+            <img
+              src="https://via.placeholder.com/300"
+              alt=""
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <a href="#">
+                <h4 class="card-title">Producto</h4>
+              </a>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                aliquam veniam nemo ratione? Pariatur tempore accusamus sapiente
+                optio earum non maiores sed ut nam vel? Sit atque nobis
+                excepturi at!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card product-card m-auto">
+            <img
+              src="https://via.placeholder.com/300"
+              alt=""
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <a href="#">
+                <h4 class="card-title">Producto</h4>
+              </a>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                aliquam veniam nemo ratione? Pariatur tempore accusamus sapiente
+                optio earum non maiores sed ut nam vel? Sit atque nobis
+                excepturi at!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card product-card m-auto">
+            <img
+              src="https://via.placeholder.com/300"
+              alt=""
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <a href="#">
+                <h4 class="card-title">Producto</h4>
+              </a>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                aliquam veniam nemo ratione? Pariatur tempore accusamus sapiente
+                optio earum non maiores sed ut nam vel? Sit atque nobis
+                excepturi at!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+
+    <a href="#" id="add" class="btn btn-primary">Añadir al arreglo</a>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <!-- Importa las capacidades de bases de datos -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-database.js"></script>
+
+    <script>
+      // Este script inicializa firebase
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyA9LPE7xXqd6MACOnInD6B5LQP8eRETkPA",
+        authDomain: "kodecamp-6e7f0.firebaseapp.com",
+        projectId: "kodecamp-6e7f0",
+        storageBucket: "kodecamp-6e7f0.appspot.com",
+        messagingSenderId: "478344217559",
+        appId: "1:478344217559:web:df8cd74460cf0b2fe98192",
+        // Config de DB
+        databaseURL: "https://kodecamp-6e7f0-default-rtdb.firebaseio.com/",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>
